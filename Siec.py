@@ -47,7 +47,7 @@ def CNN():
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2)))
 
-    model.add(Conv2D(32, (3, 3), data_format='channels_last',input_shape=(px, px, 3),padding='SAME'))
+    model.add(Conv2D(32, (3, 3),padding='SAME'))
     model.add(Activation('relu'))
     model.add(MaxPooling2D(pool_size=(2, 2)))
     
